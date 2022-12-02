@@ -60,8 +60,12 @@ def main():
     # creating a button for Prediction
     
     if st.button('Detection Result'):
-        testing = hypertension_detection([gender, age, heart_disease, ever_married, work_type, Residence_type, avg_glucose_level, bmi, smoking_status, stroke])
+        hypertension_detection = loaded_model.predict([gender, age, heart_disease, ever_married, work_type, Residence_type, avg_glucose_level, bmi, smoking_status, stroke])
     
+        if(hypertension_detection[0] == 0):
+          testing = "Low blood preassure"
+        else:
+          testing = "High blood preassure"
     
     st.success(testing)
     
