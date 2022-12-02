@@ -38,20 +38,20 @@ def main():
     # giving a title
     st.title('Ontology-based Approach in Medical Health using Hypertension as a case study')
     
+    st.header('Enter the following information')
     
     # getting the input data from the user
     
-    
-    gender = st.text_input('Gender: 0 - Female, 1 - Male, 2 - Others')
+    gender = st.text_input('Gender:     0 - Female, 1 - Male, 2 - Others')
     age = st.text_input('Age')
-    heart_disease = st.text_input('Do you have heart disease? 1 - Yes, 0 - No ')
-    ever_married = st.text_input('Ever married? 1 - Yes, 0 - No')
-    work_type = st.text_input('Work Type: 0 - Government, 1 - Never worked, 2 - Private, 3 - Self-employed, 4 - Children')
-    Residence_type = st.text_input('Residence Type: 0 - Rural, 1 - Urban')
+    heart_disease = st.text_input('Do you have heart disease?       1 - Yes, 0 - No ')
+    ever_married = st.text_input('Ever married?     1 - Yes, 0 - No')
+    work_type = st.text_input('Work Type:       0 - Government, 1 - Never worked, 2 - Private, 3 - Self-employed, 4 - Children')
+    Residence_type = st.text_input('Residence Type:     0 - Rural, 1 - Urban')
     avg_glucose_level = st.text_input('Average glucose level in blood')
     bmi = st.text_input('Body Mass Index (BMI)')
-    smoking_status = st.text_input('Smoking status: 0 - Unknown, 1 - Formerly smoked, 2 - Never smoked, 3 - Smokes')
-    stroke = st.text_input('Ever had a stroke? 1 - Yes, 0 - No')
+    smoking_status = st.text_input('Smoking status:     0 - Unknown, 1 - Formerly smoked, 2 - Never smoked, 3 - Smokes')
+    stroke = st.text_input('Ever had a stroke?      1 - Yes, 0 - No')
     
     
     # code for prediction
